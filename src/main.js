@@ -17,6 +17,17 @@ function pantallaDatosJ() {
     document.getElementById("pantalla2").style.display="none";
 }
 document.getElementById("botonj").addEventListener("click",pantallaDatosJ);
+
+function regreso1() {
+    document.getElementById("pantalla2").style.display="block";
+    document.getElementById("pantalla3").style.display="none";
+}
+document.getElementById("pokebola1").addEventListener("click",regreso1);
+function regreso2() {
+    document.getElementById("pantalla2").style.display="block";
+    document.getElementById("pantalla4").style.display="none";
+}
+document.getElementById("pokebola2").addEventListener("click",regreso2);
 /*import { example } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
