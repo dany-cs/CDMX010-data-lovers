@@ -2,7 +2,7 @@ body{
     margin: 0%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-
+    text-align: center;
 }
 .pantalla1{
     background-image:url(../imagenes/pokemon.jpg);
@@ -23,7 +23,7 @@ body{
     position: absolute;
     width: 500px;
     height: 100px;
-    left: 410px;
+    left: 365px;
     top: 536px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -62,3 +62,115 @@ body{
 .botonI:hover{
     box-shadow: 0 0 5px #cdee3a, 0 0 30px #cdee3a, 0 0 30px #cdee3a;
 }
+.pantalla2{
+    background-image: url(../imagenes/pantalla2.jpeg);
+    background-size: cover;
+    height:auto;
+    padding: 500px 500px;
+}
+.b1{
+    position: absolute;
+    width: 500px;
+    margin: 65px;
+    left: 650px;
+    top: 0px;
+    font-size: 85px;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+
+}
+.b2{
+    position: absolute;
+    width: 500px;
+    left: 720px;
+    top: 100px;
+    font-size: 75px;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+
+}
+.b3{
+    position: absolute;
+    width: 700px;
+    left: 255px;
+    top: 100px;
+    font-size: 75px;
+    margin: 350px;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#1B0FA0;
+}
+.k{
+    position: absolute;
+    width: 600px;
+    left: 0px;
+    top: 600px;
+    font-size: 45px;
+    margin: 0px;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#1B0FA0;
+
+}
+.j{
+    position: absolute;
+    width: 900px;
+    left: 1150px;
+    top: 600px;
+    font-size: 45px;
+    margin: 0px;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#1B0FA0;
+}
+.botonk{
+    position: absolute;
+    left: 150px;
+    top: 650px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 25px;
+    outline: transparent;
+
+}
+.botonj{
+    position: absolute;
+    left: 1460px;
+    top: 650px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 25px;
+    outline: transparent;
+}
+.pantalla3{
+      
+    background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
+    margin:0%;
+    padding: 25.5%;
+}
+.letras{
+    position: absolute;
+    top: 30px;
+    width: 500px;
+    margin: 0px;
+    left: 700px;
+    font-family:Vast Shadow, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+    color: #407979;
+    text-shadow:2.5px 2.5px 1.5px #00E183;
+
+}
+.pantalla4{
+    background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
+    margin:0%;
+    padding: 25.5%;
+}
+.pokebola{
+    position: absolute;
+    left: 1720px;
+    top: 810px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 25px;
+    outline: transparent;
+}
+.pokebola:hover{
+    box-shadow: 0 0 5px #dd1d1d, 0 0 30px #dd1d1d, 0 0 30px #dd1d1d;
