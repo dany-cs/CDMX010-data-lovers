@@ -1,3 +1,8 @@
+//import { example } from './data.js';
+// import data from './data/lol/lol.js';
+import { datapokemon, datapokemonj } from './data.js';
+// import data from './data/rickandmorty/rickandmorty.js';
+//console.log(data);
 //esta pantalla es la principal que lleva al primer menu//
 function pantalla(){
     document.getElementById("pantalla2").style.display="block";
@@ -10,13 +15,32 @@ function pantallaDatosK(){
     document.getElementById("pantalla3").style.display="block";
     document.getElementById("pantalla2").style.display="none";
     document.getElementById("hamburgesa1").style.display="block";
+
+    const filtrado = datapokemon()
+    filtrado.forEach(elemento=>{
+        console.log(elemento)
+        var lista = document.createElement("li");
+        lista.innerHTML = elemento.name;
+        document.getElementById("filtrado1").appendChild(lista);
+    }) 
 }
 document.getElementById("botonk").addEventListener("click",pantallaDatosK);
 //pantalla que se mira cuando se da click al boton Johto//
+
 function pantallaDatosJ() {
     document.getElementById("pantalla4").style.display="block";
     document.getElementById("pantalla2").style.display="none";
     document.getElementById("hamburgesa1").style.display="block";
+
+    const filtrado = datapokemonj()
+    filtrado.forEach(elemento=>{
+        console.log(elemento)
+        var lista = document.createElement("li");
+        lista.innerHTML = elemento.name;
+        document.getElementById("filtrado2").appendChild(lista);
+    }) 
+
+
 }
 document.getElementById("botonj").addEventListener("click",pantallaDatosJ);
 //boton pokebola que regresa a menu principal//
@@ -45,9 +69,4 @@ function toggleMenu(event) {
 menu.addEventListener('click',toggleMenu, false);
 
 
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 
-//console.log(example, data);*/
