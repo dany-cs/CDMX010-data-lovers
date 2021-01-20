@@ -39,8 +39,7 @@ function pantallaDatosJ() {
         lista.innerHTML = elemento.name;
         document.getElementById("filtrado2").appendChild(lista);
     }) 
-
-
+    
 }
 document.getElementById("botonj").addEventListener("click",pantallaDatosJ);
 //boton pokebola que regresa a menu principal//
