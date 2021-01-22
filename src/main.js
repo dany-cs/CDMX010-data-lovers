@@ -20,9 +20,6 @@ function pantallaDatosK() {
     const filtrado = datapokemon()
     filtrado.forEach(elemento => {
         console.log(elemento)
-        //let lista = document.createElement("li");
-        //lista.innerHTML = elemento.name;
-        //document.getElementById("filtrado1").appendChild(lista);
         let image = document.createElement('img')
         let parrafo = document.createElement('p')
         image.src = `${elemento.img}`
@@ -42,13 +39,6 @@ function pantallaDatosJ() {
     const filtrado = datapokemonj()
     filtrado.forEach(elemento => {
         console.log(elemento)
-<<<<<<< HEAD
-        var lista = document.createElement("li");
-        lista.innerHTML = elemento.name;
-        document.getElementById("filtrado2").appendChild(lista);
-    }) 
-    
-=======
         let image = document.createElement('img')
         let parrafo = document.createElement('p')
         image.src = `${elemento.img}`
@@ -56,7 +46,6 @@ function pantallaDatosJ() {
         renderTarjetasDos.appendChild(image)
         renderTarjetasDos.appendChild(parrafo)
     })
->>>>>>> dany
 }
 document.getElementById("botonj").addEventListener("click", pantallaDatosJ);
 //boton pokebola que regresa a menu principal//
