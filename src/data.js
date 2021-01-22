@@ -4,9 +4,8 @@ export function datapokemon() {
   var poke = data.pokemon.filter(function (datakanto) {
     return datakanto.generation.name === 'kanto';
   })
-  return poke
+  return poke;
 }
-
 
 export function datapokemonj() {
   var poke2 = data.pokemon.filter(function (datajohto) {
