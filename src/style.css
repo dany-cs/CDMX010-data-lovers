@@ -271,3 +271,13 @@ body{
     color: #333333;
 }
 /*aqui termina css de menu hamburguesa*/
+.tarjetas{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #1B0FA0;
+    columns:4 auto;
+}
+.tarjetas2{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #1B0FA0;
+    columns:4 auto;
+}
