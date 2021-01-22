@@ -31,10 +31,10 @@ function pantallaDatosJ() {
     document.getElementById("pantalla4").style.display="block";
     document.getElementById("pantalla2").style.display="none";
     document.getElementById("hamburgesa1").style.display="block";
-
+//hola mundo//
     const filtrado = datapokemonj()
     filtrado.forEach(elemento=>{
-        console.log(elemento)
+        log(elemento)
         var lista = document.createElement("li");
         lista.innerHTML = elemento.name;
         document.getElementById("filtrado2").appendChild(lista);
