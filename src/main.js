@@ -26,6 +26,8 @@ function pantallaDatosK() {
         parrafo.textContent = `${elemento.name}`
         renderTarjetasDOM.appendChild(image)
         renderTarjetasDOM.appendChild(parrafo)
+        //jsjljlaJLSljljajkl//
+        //JDLAJALSKKLSD//
     })
 }
 document.getElementById("botonk").addEventListener("click", pantallaDatosK);
