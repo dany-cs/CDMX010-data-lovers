@@ -76,16 +76,46 @@ document.getElementById("botonk").addEventListener("click", pantallaDatosK);
 function pantallaDatosJ() {
     document.getElementById("pantalla4").style.display = "block";
     document.getElementById("pantalla2").style.display = "none";
-
     const filtrado = datapokemonj()
     filtrado.forEach(elemento => {
         console.log(elemento)
+        let cardContainerA = document.createElement('div');
+        cardContainerA.classList.add("tarjetasA")
         let image = document.createElement('img')
-        let parrafo = document.createElement('p')
+        image.classList.add("muñes")
+        let numeroPokemon = document.createElement('h4')
+        let nombre = document.createElement('h3')
+        let altura = document.createElement('h4')
+        let peso = document.createElement('h4')
+        let tipo = document.createElement('p')
+        let resistencia = document.createElement('p')
+        let debilidades = document.createElement('p')
+        /*let cardContainerB = document.createElement('div')
+        cardContainerB.classList.add("tarjetasB")
+        let info = document.createElement('p')*/
         image.src = `${elemento.img}`
-        parrafo.textContent = `${elemento.name}`
-        renderTarjetasDos.appendChild(image)
-        renderTarjetasDos.appendChild(parrafo)
+        numeroPokemon.textContent = `${elemento.num}`
+        nombre.textContent = `${elemento.name}` 
+        altura.textContent = 'ALTURA: ' + `${elemento.size.height}`
+        peso.textContent = 'PESO: ' + `${elemento.size.weight}`
+        tipo.textContent = 'TIPO: ' + `${elemento.type}`
+        resistencia.textContent = 'RESISTENCIA: ' + `${elemento.resistant}`
+        debilidades.textContent = 'DEBILIDADES: ' + `${elemento.weaknesses}`
+        //info.textContent = `${elemento.about}`//
+        cardContainerA.appendChild(image)
+        cardContainerA.appendChild(numeroPokemon)
+        cardContainerA.appendChild(nombre)
+        //cardContainerB.appendChild(info)//
+        cardContainerA.appendChild(altura)
+        cardContainerA.appendChild(peso)
+        cardContainerA.appendChild(tipo)
+        cardContainerA.appendChild(resistencia)
+        cardContainerA.appendChild(debilidades)
+        renderTarjetasDos.appendChild(cardContainerA)
+        //renderTarjetasDos.appendChild(cardContainerB)//
+
+
+       
     })
 }
 document.getElementById("botonj").addEventListener("click", pantallaDatosJ);

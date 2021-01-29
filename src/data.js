@@ -13,7 +13,7 @@ export function datapokemonj() {
   let poke2 = pokemons.filter(function (datajohto) {
     return datajohto.generation.name === 'johto';
   })
-  return poke2
+  return poke2;
 }
 
 // [1, 2, 3, 4, 5].includes(5) // true
