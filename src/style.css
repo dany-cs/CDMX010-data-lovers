@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+/*esta es la forma de llamar letras de ABC
+font-family: 'Monofett', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+/*letra de detalles de tarjetas
+font-family: 'Iceland', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+/*letra de titulos y nombres
+font-family: 'Slackey', cursive;*/
+
 body{
     margin: 0%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: center;
 }
 .pantalla1{
     background-image:url(../imagenes/pokemon.jpg);
     background-size: cover;
     height:auto;
-    padding: 500px 500px ;
+    padding: 50vh 50vh ;
     
 }
 .instrucciones{
@@ -65,85 +73,220 @@ body{
 .pantalla2{
     background-image: url(../imagenes/pantalla2.jpeg);
     background-size: cover;
-    height:auto;
-    padding: 500px 500px;
+    top: auto;
+    margin:0%;
+    padding: 50vh 1vh;
 }
 .b1{
     position: absolute;
     width: 500px;
-    margin: 65px;
-    left: 650px;
+    margin: 6vh;
+    left: 670px;
     top: 0px;
-    font-size: 85px;
-    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
     color: white;
+    text-shadow:10px 4px 3px rgba(0, 0, 0, 0.993);
 
 }
 .b2{
     position: absolute;
     width: 500px;
-    left: 720px;
-    top: 100px;
-    font-size: 75px;
-    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 18vh;
+    left: 57vh;
+    top: 0px;
+    font-size: 53px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
     color: white;
+    text-shadow:10px 4px 3px rgba(41, 40, 40, 0.993);
 
 }
 .b3{
     position: absolute;
-    width: 700px;
-    left: 255px;
-    top: 100px;
-    font-size: 75px;
-    margin: 350px;
-    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#1B0FA0;
+    width: 1000px;
+    margin: 38.5vh;
+    left: 15vh;
+    top: 15px;
+    font-size: 53px;
+    
+    font-family: 'Press Start 2P', cursive;
+    color:#f1ed08df;
+    text-shadow:10px 4px 3px rgba(0, 0, 0, 0.993);
 }
 .k{
-    position: absolute;
-    width: 600px;
-    left: 0px;
+    position: fixed;
+    right: 158vh;
     top: 600px;
     font-size: 45px;
     margin: 0px;
-    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#1B0FA0;
+    font-family: 'Slackey', cursive;
+    color:#683503;
+    text-shadow:5px 1px 2px rgb(10, 65, 3);
 
 }
 .j{
-    position: absolute;
-    width: 900px;
-    left: 1150px;
+    position: fixed;
+    right: 20vh;
     top: 600px;
     font-size: 45px;
     margin: 0px;
-    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#1B0FA0;
+    font-family: 'Slackey', cursive;
+    color:#683503;
+    text-shadow:5px 1px 2px rgb(10, 65, 3);
 }
 .botonk{
-    position: absolute;
+    position: fixed;
     left: 150px;
     top: 650px;
     margin: 20px;
-    padding: 8px;
+    padding: 1vh;
     border-radius: 25px;
     outline: transparent;
 
 }
 .botonj{
-    position: absolute;
-    left: 1460px;
+    position: fixed;
+    left: 1510px;
     top: 650px;
     margin: 20px;
-    padding: 8px;
+    padding: 1vh;
     border-radius: 25px;
     outline: transparent;
 }
+/*aqui inicia barra lateral*/
+.fa-2x {
+    font-size: 50px;
+    }
+    /*esta funcion hace que se desaparezcan las letras 
+    .fa {
+    
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:30px;
+    }*/
+    .main-menu:hover,nav.main-menu.expanded {
+    width:250px;
+    overflow:visible;
+    }
+    
+    .main-menu {
+    background:#212121;
+    border-right:1px solid #e5e5e5;
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
+    width:130px;
+    overflow:hidden;
+    -webkit-transition: width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+    }
+    
+    .main-menu>ul {
+    margin:7px 0;
+    }
+    
+    .main-menu li {
+    position:relative;
+    display:block;
+    width:250px;
+    }
+    
+    .main-menu li>a {
+    position:relative;
+    display:inline;
+    border-collapse:collapse;
+    border-spacing:0;
+    color:#999;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    text-decoration:none;
+    -webkit-transform:translateZ(0) scale(1,1);
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear;
+      
+    }
+    
+    /*.main-menu .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:60px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:18px;
+    }*/
+    
+    .main-menu .nav-text {
+    position:static;
+    display:table-cell;
+    vertical-align:middle;
+    top: 50px;
+    width:90px;
+    font-family: 'Press Start 2P', cursive;
+    }
+    .no-touch .scrollable.hover {
+    overflow-y:hidden;
+    }
+    
+    .no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+    }
+    
+    a:hover,a:focus {
+    text-decoration:none;
+    }
+    
+    nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    }
+    
+    nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:5px;
+    }
+    .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+        box-shadow: 0 0 5px #dd1d1d, 0 0 30px #dd1d1d, 0 0 30px #dd1d1d;
+    }
+    .area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+    }
+    @font-face {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+    }
+    /*aqui termina barra lateral*/
 .pantalla3{
       
     background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
+    position: -webkit-sticky;
+    position: sticky;
+    top: auto;
     margin:0%;
-    padding: 25.5%;
+    width: auto;
+    height: auto;
+    padding: 15vh 2vh;
+
 }
 .letras{
     position: absolute;
@@ -151,7 +294,7 @@ body{
     width: 500px;
     margin: 0px;
     left: 700px;
-    font-family:Vast Shadow, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Slackey', cursive;
     font-size: 40px;
     text-align: center;
     color: #407979;
@@ -165,8 +308,8 @@ body{
 }
 
 .pokebola{
-    position: absolute;
-    left: 1720px;
+    position: fixed;
+    left: 1760px;
     top: 810px;
     margin: 20px;
     padding: 8px;
@@ -176,108 +319,93 @@ body{
 .pokebola:hover{
     box-shadow: 0 0 5px #dd1d1d, 0 0 30px #dd1d1d, 0 0 30px #dd1d1d;
 }
-/* css de menu hamburguesa*/
-.hamburgesa{
-    position: fixed;
-    background-color: transparent;
-    left:0;
-    top:0;
-	height:30px;
-	width:30px;
-	padding:20px 20px;
-    -webkit-transform:translate3d(0, 0, 0);
-    transform:translate3d(0, 0, 0);
-	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-	z-index:1002;
-	cursor:pointer;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none
-}
-.hamburgesa.is-active{
-    background-color: none;
-}
-._layer{
-    background:#333333;
-	margin-bottom:5px;
-	border-radius:3px;
-	width:28px;
-	height:4px;
-	opacity:1;
-	-webkit-transform:translate3d(0, 0, 0);
-	transform:translate3d(0, 0, 0);
-	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-}
-.hamburgesa:hover .-top{
-    -webkit-transform:translateY(-100%);
-	-ms-transform:translateY(-100%);
-	transform:translateY(-100%);
-}
-.hamburgesa:hover .-bottom{
-    -webkit-transform:translateY(100%);
-	-ms-transform:translateY(100%);
-	transform:translateY(100%);
-}
-.hamburgesa.hamburgesa.is-active .-top{
-    -webkit-transform:translateY(200%) rotate(45deg);
-	-ms-transform:translateY(200%) rotate(45deg);
-	transform:translateY(200%) rotate(45deg);
-}
-.hamburgesa.is-active .-mid{
-	opacity:0;
-}
-.hamburgesa.is-active .-bottom{
-    -webkit-transform:translateY(-200%) rotate(135deg);
-	-ms-transform:translateY(-200%) rotate(135deg);
-	transform:translateY(-200%) rotate(135deg);
-}
-.menufiltro.is_active{
-    transform: translate3d(0px, 0px, 0px);
-}
-.menufiltro{
-    background-color:transparent;
-    bottom: 0%;
-    height: 100%;
-    left: 20px;
-    overflow-y: none;
-    position: fixed;
-    top: 0;
-    transform: translate3d(0px, -100%, 0px);
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    width: 100%;
-    z-index: 1001;
-}
-.menufiltro ul li{
-    list-style: none;
-    text-align: left;
-	font-family: Verdadna, Arial, Helvetica;
-	color: nav-color-text;
-	font-size:1.5rem;
-	line-height:3em;
-	height:3em;
-   color: #369;
-	text-transform:none;
-	font-weight:bold;
-}
-.menufiltro ul li a{
-    text-decoration: none;
-    color: #369;
-}
-.menufiltro ul li a:hover{
-    text-decoration: none;
-    color: #333333;
-}
-/*aqui termina css de menu hamburguesa*/
 .tarjetas{
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: #1B0FA0;
-    columns:4 auto;
+    background: lightblue;
+    margin-left: 10vh;
+    
+}
+.tarjetaLadoA{
+    font-family: 'Iceland', cursive;
+    background: lightcoral;
+    width: 200px;
+    height:300px;
+	transition: all 1s;
+	transform-style: preserve-3d;
+	display: inline-block;
+    margin: 5vh;
+    padding-top:5px;
+    padding-bottom: 40px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+
+}
+.tarjetaLadoA:hover{
+    transform: rotateY(180deg);
+}
+.numeros{
+    font-family: 'Iceland', cursive;
+}
+.nombres{
+    font-family: 'Slackey', cursive;
+}
+/*
+.tarjetaLadoB{
+    position: relative;
+    background: white;
+    width: 200px;
+    height:300px;
+	transition: all 1s;
+	transform-style: preserve-3d;
+	display: inline-block;
+    margin: 5vh;
+    padding-top:5px;
+    padding-bottom: 40px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+
+}
+.tarjetaLadoB:hover{
+    transform: rotateY(180deg);
+}
+
+/*.{
+    width: 340px;
+    position: absolute;    
+    top: -30px;
+    left: -25px;
+}
+.filtrado1 > p {
+    
 }
 .tarjetas2{
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: #1B0FA0;
     columns:4 auto;
 }
+  /*background-color: #369;
+
+#filtrado1 > img {
+
+  
+}
+
+/*
+    margin-top: 50px;
+    margin-left: 1vh;
+    margin-right: 1vH;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: #369;
+    width: 10vh;
+    height: 10vh;
+}*/

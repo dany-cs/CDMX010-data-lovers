@@ -18,46 +18,72 @@
 
   <div class="pantalla2" id="pantalla2" style="display: none;">
     <p class="b1">Bienvenidx!</p>
-    
     <p class="b2" id="nombre"></p>
-    <p class="b3">Selecciona la liga</p>
-    <p class="k">KANTO</p>
+    <h4 class="b3">Selecciona la liga</h4>
+    <h1 class="k">Kanto</h1>
     <button class="botonk" id="botonk"><img src="../imagenes/kanto.jpg"></button>
-    <P class="j">JOHTO</P>
+    <h1 class="j">Johto</h1>
     <button class="botonj" id="botonj"><img src="../imagenes/johto.jpg"></button>
   </div>
-    <!--codigo de menu hamburgesa-->
-    <div id="hamburgesa1" class="hamburgesa" style="display: none;">
-      <div class="_layer -top">
-    </div>
-    <div class="_layer -mid">
-    </div>
-    <div class="_layer -bottom"></div>
-    </div>
-    <nav class="menufiltro">
+
+  <div id="pantalla3" class="pantalla3" style="display: none;">
+
+    <nav class="main-menu">
       <ul>
-        <li><a href="#">A⇨Z</a></li>
-        <li><a href="#"># Pokédex</a></li>
-        <li><a href="#">Fuerza</a></li>
-        <li><a href="#">Tipo</a></li>
-      </ul> 
+        <li>
+          <a href="main.js">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text">
+              A→Z 
+            </span>
+          </a>
+
+        </li>
+        <li class="has-subnav">
+          <a href="main.js">
+            <i class="fa fa-laptop fa-2x"></i>
+            <span class="nav-text">
+              Debilidades
+            </span>
+          </a>
+
+        </li>
+        <li class="has-subnav">
+          <a href="main.js">
+            <i class="fa fa-list fa-2x"></i>
+            <span class="nav-text">
+              Resistencia
+            </span>
+          </a>
+
+        </li>
+        <li class="has-subnav">
+          <a href="main.js">
+            <i class="fa fa-folder-open fa-2x"></i>
+            <span class="nav-text">
+              Tipo
+            </span>
+          </a>
+
+        </li>
+          </a>
+        </li>
+      </ul>
     </nav>
-  <div id="pantalla3" class="pantalla3"  style="display: none;">
     <h1 class="letras">LIGA POKEMON
       <br>
       "KANTO"
     </h1>
-    
-  <div id="filtrado1" class="tarjetas"></div>
-    <button id="pokebola1" class="pokebola"><img src="../imagenes/pokebola.jpeg"></button>
+    <div id="filtrado1" class="tarjetas">
+      <button id="pokebola1" class="pokebola"><img src="../imagenes/pokebola.jpeg"></button>
+    </div>
   </div>
-  
-  <div id="pantalla4" class="pantalla4"  style="display: none;">
-    <h1 class="letras">LIGA POKEMON
-      <br>
-      "JOHTO"
+
+
+  <div id="pantalla4" class="pantalla4" style="display: none;">
+    "JOHTO"
     </h1>
-    <div id="filtrado2" class="tarjetas2" ></div>
+    <div id="filtrado2" class="tarjetas2"></div>
     <button id="pokebola2" class="pokebola"><img src="../imagenes/pokebola.jpeg"></button>
   </div>
   <script src="main.js" type="module"></script>
