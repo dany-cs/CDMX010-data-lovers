@@ -31,7 +31,7 @@ export function filtrarPorDebilidad(debilidad) {
 /**
  * 'pikachu'[0] === 'p' // true
  * 'volbasor'.includes('vol') // true
- */
+ 
 export function filtrarAZ(character) {
   const pokemonsFiltrados = pokemons.filter(function(pokemon){
     return pokemon.name[0] === character
@@ -40,5 +40,8 @@ export function filtrarAZ(character) {
   return pokemonsFiltrados;
 }
 
-// const letra = document.getElementById('letra').value
-// filtrarAZ(letra)
+const letra = document.getElementById('letra').value
+filtrarAZ(letra)
+filtrarAZ('a')
+filtrarAZ('b')
+filtrarAZ('c')*/

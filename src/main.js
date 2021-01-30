@@ -10,9 +10,6 @@ function pantalla() {
     document.getElementById("pantalla1").style.display = "none";
     document.getElementById("nombre").innerHTML = nomUsuario.value;
 }
-
-console.log('pokemons por debilidad fire', filtrarPorDebilidad('fire'))
-
 document.getElementById("ingresar").addEventListener("click", pantalla);
 //pantalla que se mira cuando se da click al boton kanto//
 function pantallaDatosK() {
@@ -68,8 +65,13 @@ function pantallaDatosK() {
         //renderTarjetasDOM.appendChild(cardContainerB);
     })
 
-}
+    function menuLateral1() {
+       const fuego1 = document.getElementById(filtrarPorDebilidad('fire'))
+       fuego1.textContent = fuego1.value;
+    }
+    document.getElementById("fuegoUno").addEventListener("click", menuLateral1);
 
+}
 document.getElementById("botonk").addEventListener("click", pantallaDatosK);
 //pantalla que se mira cuando se da click al boton Johto//
 

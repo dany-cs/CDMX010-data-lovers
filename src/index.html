@@ -6,7 +6,7 @@
   <title>Data pokemon</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
+<script src="https://kit.fontawesome.com/d4f2c83a79.js" crossorigin="anonymous"></script>
 <body>
   <div id="pantalla1" class="pantalla1" style="display: block;">
     <P class="instrucciones" id="instrucciones">"INSTRUCCIONES"</P>
@@ -28,52 +28,56 @@
 
   <div id="pantalla3" class="pantalla3" style="display: none;">
 
-    <nav class="main-menu">
-      <ul>
-        <li>
-          <a href="main.js">
-            <i class="fa fa-home fa-2x"></i>
-            <span class="nav-text">
-              A→Z 
-            </span>
-          </a>
-
-        </li>
-        <li class="has-subnav">
-          <a href="main.js">
-            <i class="fa fa-laptop fa-2x"></i>
-            <span class="nav-text">
-              Debilidades
-            </span>
-          </a>
-
-        </li>
-        <li class="has-subnav">
-          <a href="main.js">
-            <i class="fa fa-list fa-2x"></i>
-            <span class="nav-text">
-              Resistencia
-            </span>
-          </a>
-
-        </li>
-        <li class="has-subnav">
-          <a href="main.js">
-            <i class="fa fa-folder-open fa-2x"></i>
-            <span class="nav-text">
-              Tipo
-            </span>
-          </a>
-
-        </li>
-          </a>
-        </li>
-      </ul>
-    </nav>
     <h1 class="letras">LIGA POKEMON
       <br>
       "KANTO"
     </h1>
+
+    <div id="fuegoUno" class="contenedor-menu1">
+      <!--<a href="#" class="botonA1">menu</a>-->
+      <ul class="botonA2">
+        <li><a href="#">filtro1<i class="icono derecha fas fa-angle-double-down"></i></a>
+          <ul>
+            <li><a id="fuego" href="menuLateral1">filtro1.1</a></li>
+            <li><a href="#">filtro1.2</a></li>
+            <li><a href="#">filtro1.3</a></li>
+            <li><a href="#">filtro1.4</a></li> 
+          </ul>
+        </li>
+        
+        <li><a href="#">filtro2<i class="icono derecha fas fa-angle-double-down"></i></a>
+          <ul>
+            <li><a href="#">filtro2.1</a></li>
+            <li><a href="#">filtro2.2</a></li>
+            <li><a href="#">filtro2.3</a></li>
+            <li><a href="#">filtro2.4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">filtro3<i  class="icono derecha fas fa-angle-double-down"></i></a>
+          <ul>
+            <li><a href="#">filtro3.1</a></li>
+            <li><a href="#">filtro3.2</a></li>
+            <li><a href="#">filtro3.3</a></li>
+            <li><a href="#">filtro3.4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">filtro4<i class="icono derecha fas fa-angle-double-down"></i></a>
+          <ul>
+            <li><a href="#">filtro4.1</a></li>
+            <li><a href="#">filtro4.2</a></li>
+            <li><a href="#">filtro4.3</a></li>
+            <li><a href="#">filtro4.4</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+
+    </div>
+
+
+
+
     <div id="filtrado1" class="tarjetas">
       <button id="pokebola1" class="pokebola"><img src="../imagenes/pokebola.jpeg"></button>
     </div>
