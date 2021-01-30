@@ -13,20 +13,20 @@ export function datapokemonj() {
   let poke2 = pokemons.filter(function (datajohto) {
     return datajohto.generation.name === 'johto';
   })
-  return poke2
+  return poke2;
 }
 
 // [1, 2, 3, 4, 5].includes(5) // true
 // [1, 2, 3, 4, 5].includes(0) // false
 // ["fire", "ice", "flying", "psychic"].includes('fire') // true
-
+/** 
 export function filtrarPorDebilidad(debilidad) {
   const pokemonsFiltrados = pokemons.filter(function (pokemon) {
     return pokemon.weaknesses.includes(debilidad);
   })
 
   return pokemonsFiltrados;
-}
+}*/
 
 /**
  * 'pikachu'[0] === 'p' // true

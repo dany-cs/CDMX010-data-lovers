@@ -227,7 +227,13 @@ a{
 .pantalla4{
     background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
     margin:0%;
-    padding: 25.5%;
+    padding: 15vh 2vh;
+    position:-webkit-sticky;
+    position: sticky;
+    top:auto;
+    width: auto;
+    height: auto;
+    
 }
 
 .pokebola{
@@ -309,31 +315,4 @@ a{
     position: absolute;    
     top: -30px;
     left: -25px;
-}
-.filtrado1 > p {
-    
-}
-.tarjetas2{
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: #1B0FA0;
-    columns:4 auto;
-}
-  /*background-color: #369;
-
-#filtrado1 > img {
-
-  
-}
-
-/*
-    margin-top: 50px;
-    margin-left: 1vh;
-    margin-right: 1vH;
-
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    background: #369;
-    width: 10vh;
-    height: 10vh;
 }*/
