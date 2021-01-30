@@ -13,7 +13,7 @@ export function datapokemonj() {
   let poke2 = pokemons.filter(function (datajohto) {
     return datajohto.generation.name === 'johto';
   })
-  return poke2;
+  return poke2
 }
 
 // [1, 2, 3, 4, 5].includes(5) // true
@@ -40,8 +40,13 @@ export function filtrarAZ(character) {
   return pokemonsFiltrados;
 }
 
+<<<<<<< HEAD
 const letra = document.getElementById('letra').value
 filtrarAZ(letra)
 filtrarAZ('a')
 filtrarAZ('b')
 filtrarAZ('c')*/
+=======
+// const letra = document.getElementById('letra').value
+// filtrarAZ(letra)
+>>>>>>> katth
