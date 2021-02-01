@@ -37,7 +37,7 @@ function pantallaDatosK() {
         let tipo = document.createElement('p')
         let resistencia = document.createElement('p')
         let debilidades = document.createElement('p')
-        let cardContainerB = document.createElement('div');
+        //let cardContainerB = document.createElement('div');//
         //cardContainerB.classList.add("tarjetaLadoB")
         //let info = document.createElement('p')
         
@@ -82,16 +82,23 @@ function pantallaDatosJ() {
     filtrado.forEach(elemento => {
         console.log(elemento)
         let cardContainerA = document.createElement('div');
-        cardContainerA.classList.add("tarjetasA")
+        cardContainerA.classList.add("tarjetaLadoA1")
         let image = document.createElement('img')
         image.classList.add("muñes")
-        let numeroPokemon = document.createElement('h4')
+        let numeroPokemon = document.createElement('h3')
+        numeroPokemon.classList.add("numerosA");
         let nombre = document.createElement('h3')
+        nombre.classList.add("nombresA");
         let altura = document.createElement('h4')
+        altura.classList.add("alturaA");
         let peso = document.createElement('h4')
+        peso.classList.add("pesoA");
         let tipo = document.createElement('p')
+        tipo.classList.add("tipoA");
         let resistencia = document.createElement('p')
+        resistencia.classList.add("resistenciaA");
         let debilidades = document.createElement('p')
+        debilidades.classList.add("debilidadesA");
         /*let cardContainerB = document.createElement('div')
         cardContainerB.classList.add("tarjetasB")
         let info = document.createElement('p')*/
@@ -115,10 +122,15 @@ function pantallaDatosJ() {
         cardContainerA.appendChild(debilidades)
         renderTarjetasDos.appendChild(cardContainerA)
         //renderTarjetasDos.appendChild(cardContainerB)//
-
-
-       
+     
     })
+    function menuLateral2() {
+        const fuego2 = document.getElementById(filtrarPorDebilidad('fire'))
+        fuego1.textContent = fuego2.value;
+     }
+     document.getElementById("fuegoDos").addEventListener("click", menuLateral2);
+
+
 }
 document.getElementById("botonj").addEventListener("click", pantallaDatosJ);
 //boton pokebola que regresa a menu principal//
