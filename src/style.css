@@ -227,13 +227,10 @@ a{
 .pantalla4{
     background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
     margin:0%;
-    padding: 15vh 2vh;
+    padding: 0%;
     position:-webkit-sticky;
-    position: sticky;
-    top:auto;
-    width: auto;
-    height: auto;
-    
+    position: absolute;
+   
 }
 
 .pokebola{
@@ -289,25 +286,27 @@ a{
 /*Aqui comienza barra lateral Jotho*/
 .contenedor-menu2{
     position:fixed;
-    background: gray;
-    width: 20%;
-    min-width: 300px;
-    margin: 0%;
-    top: 0%;
-    display: inline-block;
+    /*background-image:url(../imagenes/pikanegro.jpg);*/
+    background-image: url(../imagenes/fazul.jpg);
+    background-size: cover;
+    width: 8%;
+    right:  2%;
+    left: 0%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
     font-family: 'Iceland', cursive;
     font-size: 25px;
-    line-height: 18px;
-    display: block;
+    
 }
 a{
     text-decoration: none;
-    color: black; 
+    color: white; 
 
 }
 
 .contenedor-menu2 .botonB2{
-    width: 35%;
+    width: 100%;
 }
 .contenedor-menu2 ul{
     list-style: none;
@@ -315,13 +314,14 @@ a{
 .contenedor-menu2 .botonB2 li a{
     display: block;
     padding: 15px;
-    background: lightseagreen;
+    background: transparent;
+    transition: all .2s linear;
 }
 /*la siguiente linea realiza cambio de colores sencibles al pasar el mouse sobre el*/
 .contenedor-menu2 .botonB2 li a:hover{
     background: #81C258;
     color: purple;
-    display: block;
+    
 }
 .contenedor-menu2 .botonB2 .icono.derecha{
     font-size: 12px;
@@ -329,12 +329,41 @@ a{
     float: inline-start;
     margin-left: 20px;
 }
+.contenedor-menu2 .botonB2 ul li a{
+    display: inline-block;
+    background-color: #dd1d1d;
+    border: 5px rgba(253, 247, 247, 0.53);
+}
+.contenedor-menu2 .botonB2 ul li a:hover{
+    background: rgba(41, 40, 40, 0.993);
+    color: rosybrown;
+}
+nav li ul{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+nav li:hover ul{
+    display: block;
+    box-shadow: 0 0 5px rgb(34, 33, 33), 0 0 30px black, 0 0 30px black;
+}
+
 /*Aqui termina menu lateral johto*/
 /*Aqui comienza tarjetas jotho*/
+.tarjetas2{
+    position: relative;
+    top: 20vh;
+    left:20vh;
+    display: inline-block;
+
+}
 .tarjetaLadoA1{
     box-sizing: border-box;
     font-family: 'Iceland', cursive;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR056S079SJC33EcQv_KpCyS3mC3zjAQnswqg&usqp=CAU);
+    background-image: url(https://image.freepik.com/vector-gratis/diseno-fondo-estrellas-brillantes_1308-35042.jpg);
     width: 240px;
     height:340px;
 	transition: all 2s;
@@ -352,14 +381,15 @@ a{
     color: white;
 }
 .tarjetaLadoA1:hover{
-    transform: rotateY(180deg);
+    transform: rotateY(90deg);
 }
 .numerosA{
     font-family: 'Iceland', cursive;
     color: yellow;
     text-shadow:2.5px 2.5px 1.5px #000205;
     font-size: 23px;
-    background-color: #032564;
+
+    
 }
 .nombresA{
     font-family: 'Slackey', cursive;
@@ -369,17 +399,18 @@ a{
     text-align: center;
 }
 .muñes{
-    position: sticky;
-    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8c2T47zZdy2K9HCaFIZoPb2blBxGyYVErfg&usqp=CAU);*/
+    position: relative;
+    top: -55px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px ;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; 
+    background-color: transparent;
 }
 .alturaA{
     color:silver;
     text-shadow:2.5px 2.5px 1.5px #000205;
-    background-color: #032564;
+    
     font-size: 20px;
    
 }
@@ -392,25 +423,19 @@ a{
     font-size:20px ;
     text-shadow:2.5px 2.5px 1.5px #000205;
     color: white;
-    background-color: #032564;
-
+   
 }
 .tipoA{
     font-size:20px ;
     text-shadow:2.5px 2.5px 1.5px #000205;
     color:white;
-    background-color:#000713;
+   
 }
 .debilidadesA{
     font-size:20px ;
     text-shadow:2.5px 2.5px 1.5px #000205;
-    
+    background-color:rgb(47, 77, 160);
 }
-
-
-
-
-
 
 /*Aqui termina tarjetas lado jotho*/
 /*letras jotho*/
@@ -421,10 +446,12 @@ a{
     margin: 0px;
     left: 700px;
     font-family: 'Slackey', cursive;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    color: #407979;
-    text-shadow:2.5px 2.5px 1.5px #00E183;
+    color:rgb(236, 214, 11);
+    -webkit-text-stroke: 2.5px  rgb(47, 77, 160);
+    text-shadow:8px 2.5px 2.5px #030303;
+    
 
 }
 /*letras jotho fin */
