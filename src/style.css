@@ -165,50 +165,77 @@ body{
 /*aqui inicia barra lateral*/
 .contenedor-menu1{
     position: fixed;
-    background: rebeccapurple;
-    width: 20%;
-    min-width: 300px;
-    margin: 0%;
-    top: 0%;
-    display: inline-block;
+    background-image: url(../imagenes/pantallaverde.jpg);
+    background-size: cover;
+    width: 8%;
+    right: 2%;
+    left: 0%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
     font-family: 'Iceland', cursive;
     font-size: 25px;
-    line-height: 18px;
+    
 }
 a{
     text-decoration: none;
-    color: black;   
+    color: rgb(255, 255, 255);   
 }
 
 .contenedor-menu1 .botonA2{
-    width: 35%;
+    width: 100%;
+    
 }
 .contenedor-menu1 ul{
     list-style: none;
 }
 .contenedor-menu1 .botonA2 li a{
+    
     display: block;
     padding: 15px;
-    background: lightseagreen;
+    background-image: url(../imagenes/pantallaverde.jpg);
+    transition:all .2s linear;
 }
 /*la siguiente linea realiza cambio de colores sencibles al pasar el mouse sobre el*/
 .contenedor-menu1 .botonA2 li a:hover{
     background: #81C258;
     color: purple;
 }
-.contenedor-menu1 .botonA2 .icono.derecha{
+.contenedor-menu1 .botonA2 .icono{
     font-size: 12px;
     line-height: 18px;
     float: inline-start;
     margin-left: 20px;
 }
+.contenedor-menu1 .botonA2 ul li a {
+    display: inline-block;
+    background: rgba(246, 91, 251, 0.979);
+    border:5px rgb(7, 7, 7);
+}
+.contenedor-menu1 .botonA2 ul li a:hover{
+    background: rgb(100, 248, 199);
+    color: rgb(233, 236, 44);
+}
+nav li ul{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    -webkit-transition:all .5s linear;
+    transition:all .5s linear;
+}
+nav li:hover ul{display: block;   
+    box-shadow: 0 0 5px rgb(34, 33, 33), 0 0 30px black, 0 0 30px black;
 
+}
     /*aqui termina barra lateral*/
 .pantalla3{
-    position: absolute;
+    position: sticky;
     background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
     padding: 0%;
     margin: 0%;
+    bottom: auto;
+    
     
 }
 .letras{
@@ -251,63 +278,99 @@ a{
 .tarjetas{
     
     position: relative;
-    background: lightblue;
-    top: 15vh;
-    left: 20vh;
-    display: inline-block;
+    background: transparent;
+    top: 20vh;
+    left: 25vh;
+    width: 88%;
+    bottom: auto;
+    display: flex;
+    flex-flow: row wrap;
     
 }
 .tarjetaLadoA{
+    margin-left: 18px;
+    position: relative;
+    background-image: url(../imagenes/pantallaverde.jpg);
+    
+    color: rgb(54, 236, 227);
     box-sizing: border-box;
     font-family: 'Iceland', cursive;
-    background: lightcoral;
     width: 200px;
     height:300px;
-	transition: all 1s;
-	transform-style: preserve-3d;
-	display: inline-block;
-    margin: 5vh;
-    padding-top:5px;
+    display: inline-block;
+    z-index: 1;
     padding-bottom: 40px;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px 70px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 70px 70px 15px 15px;
     text-align: center;
     box-shadow: -1px 15px 30px -12px black;
+    transition: all 1s ease 0s;
+    transform-style: preserve-3d;
+    margin-bottom: 5%;
+    margin-right: 0%;
 
 }
 .tarjetaLadoA:hover{
-    transform: rotateY(180deg);
+    transform: rotateY(90deg);
+}
+.muñequitos{
+    position: inherit;
+    background-color:transparent; 
+    top: -45px;
+    border: transparent;
+    border-radius: 8px 8px 20px 20px;
+    box-shadow: 0px 42px 37px -27px black;
 }
 .numeros{
+    position: inherit;
+    border-radius: 110px 110px 110px 110px;
+    width: 79px;
+    left: 59px;
+    bottom: -160px;
+    background-color: #cdee3a;
+    color: #683503;
+    font-size: 20px;
     font-family: 'Iceland', cursive;
 }
 .nombres{
+    color: yellow;
+    font-size: 23px;
     font-family: 'Slackey', cursive;
-}
-/*
-.tarjetaLadoB{
+    -webkit-text-stroke: 1px #114ec6;
     position: relative;
-    background: white;
+    top: -63px;
+}
+.tarjetaLadoA p{
+    position: relative;
+    top: -44px;
+    font-size: 18px;
+}
+
+.tarjetaLadoB{
+    background-image: url(../imagenes/pantallaverde.jpg);
+    position:inherit;
+    top:2px;
+    left: -199px;
     width: 200px;
     height:300px;
-	transition: all 1s;
-	transform-style: preserve-3d;
-	display: inline-block;
-    margin: 5vh;
-    padding-top:5px;
-    padding-bottom: 40px;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px 70px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    text-align: center;
-    box-shadow: -1px 15px 30px -12px black;
-
+    display: inline-flex;
+    border-radius: 70px 70px 15px 15px;
 }
-.tarjetaLadoB:hover{
-    transform: rotateY(180deg);
+.B{
+    color:white;
+    font-size: 20px;
+    top: 30px;
+    left: 25px;
+    width: 75%;
+    height:200px;
+    font-family: 'Iceland', cursive;
+    position: relative;
+    text-align: center;
+    background-color: rgba(126, 252, 0, 0.267);
+    border-radius: 70px 70px 15px 15px;
+}
+.B:hover div{
+    display: block; 
+    box-shadow: 0 0 5px rgb(34, 33, 33), 0 0 30px black, 0 0 30px black;
 }
 
 /*.{

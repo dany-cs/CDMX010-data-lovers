@@ -37,9 +37,10 @@ function pantallaDatosK() {
         let tipo = document.createElement('p')
         let resistencia = document.createElement('p')
         let debilidades = document.createElement('p')
-        let cardContainerB = document.createElement('div');
-        //cardContainerB.classList.add("tarjetaLadoB")
-        //let info = document.createElement('p')
+        let cardContainer2 = document.createElement('div')
+        cardContainer2.classList.add("tarjetaLadoB")
+        let info = document.createElement('nav')
+        info.classList.add("B")
         
         image.src = `${elemento.img}`
         numeroPokemon.textContent = `${elemento.num}`
@@ -49,7 +50,7 @@ function pantallaDatosK() {
         tipo.textContent = 'TIPO: ' + `${elemento.type}`
         resistencia.textContent = 'RESISTENCIA: ' + `${elemento.resistant}`
         debilidades.textContent = 'DEBILIDADES: ' + `${elemento.weaknesses}`
-        //info.textContent = `${elemento.about}`
+        info.textContent = 'Informacion: '+ `${elemento.about}`
 
         cardContainer.appendChild(image)
         cardContainer.appendChild(numeroPokemon)
@@ -59,10 +60,11 @@ function pantallaDatosK() {
         cardContainer.appendChild(tipo)
         cardContainer.appendChild(resistencia)
         cardContainer.appendChild(debilidades)
-        //cardContainerB.appendChild(info)
+        cardContainer2.appendChild(info)
 
         renderTarjetasDOM.appendChild(cardContainer);
-        //renderTarjetasDOM.appendChild(cardContainerB);
+        renderTarjetasDOM.appendChild(cardContainer2);
+        
     })
 
     function menuLateral1() {
