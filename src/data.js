@@ -1,3 +1,4 @@
+//import pokemon from './data/pokemon/pokemon.js';//
 import data from './data/pokemon/pokemon.js';
 
 const pokemons = data.pokemon
@@ -16,32 +17,152 @@ export function datapokemonj() {
   return poke2;
 }
 
-// [1, 2, 3, 4, 5].includes(5) // true
-// [1, 2, 3, 4, 5].includes(0) // false
-// ["fire", "ice", "flying", "psychic"].includes('fire') // true
-/** 
-export function filtrarPorDebilidad(debilidad) {
-  const pokemonsFiltrados = pokemons.filter(function (pokemon) {
-    return pokemon.weaknesses.includes(debilidad);
+//funcion para acomodar de la a-z//
+export function filtradoAbc() {
+  let pokeK = datapokemon();
+  let pokemonAz = pokeK.sort((a, b) => {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
   })
+  console.log(pokemonAz);
+  // aqui vamos a renderizar 
+  let renderTarjetasDOM = document.querySelector('.tarjetas');
+  let filtrado1 = document.getElementById("filtrado1");
+  filtrado1.innerHTML = "";
+  renderTarjetasDOM.innerHTML = "";
 
-  return pokemonsFiltrados;
-}*/
+  document.getElementById("pantalla3").style.display = "block";
+  document.getElementById("pantalla2").style.display = "none";
 
-/**
- * 'pikachu'[0] === 'p' // true
- * 'volbasor'.includes('vol') // true
- 
-export function filtrarAZ(character) {
-  const pokemonsFiltrados = pokemons.filter(function(pokemon){
-    return pokemon.name[0] === character
+
+  const filtrado = pokemonAz;
+  filtrado.forEach(elemento => {
+    let cardContainer = document.createElement('div');
+        cardContainer.classList.add("tarjetaLadoA");
+        let image = document.createElement('img')
+        image.classList.add("muñequitos");
+        let numeroPokemon = document.createElement('h1')
+        numeroPokemon.classList.add("numeros");
+        let nombre = document.createElement('h3')
+        nombre.classList.add("nombres");
+        let altura = document.createElement('h4')
+        let peso = document.createElement('h4')
+        let tipo = document.createElement('h4')
+        let resistencia = document.createElement('p')
+        resistencia.classList.add("resistencia1");
+        let debilidades = document.createElement('p')
+        debilidades.classList.add("debilidades1");
+        let cardContainer2 = document.createElement('div')
+        cardContainer2.classList.add("tarjetaLadoB")
+        let info = document.createElement('h2')
+        info.classList.add("ladoB")
+
+    image.src = `${elemento.img}`
+    numeroPokemon.textContent = `${elemento.num}`
+    nombre.textContent = `${elemento.name}`
+    altura.textContent = 'ALTURA: ' + `${elemento.size.height}`
+    peso.textContent = 'PESO: ' + `${elemento.size.weight}`
+    tipo.textContent = 'TIPO: ' + `${elemento.type}`
+    resistencia.textContent = 'RESISTENCIA: ' + `${elemento.resistant}`
+    debilidades.textContent = 'DEBILIDADES: ' + `${elemento.weaknesses}`
+    info.textContent = 'Informacion: ' + `${elemento.about}`
+
+    cardContainer.appendChild(image)
+    cardContainer.appendChild(numeroPokemon)
+    cardContainer.appendChild(nombre)
+    cardContainer.appendChild(altura)
+    cardContainer.appendChild(peso)
+    cardContainer.appendChild(tipo)
+    cardContainer.appendChild(resistencia)
+    cardContainer.appendChild(debilidades)
+    cardContainer2.appendChild(info)
+
+    renderTarjetasDOM.appendChild(cardContainer);
+    renderTarjetasDOM.appendChild(cardContainer2);
+
+
   })
-
-  return pokemonsFiltrados;
 }
 
-const letra = document.getElementById('letra').value
-filtrarAZ(letra)
-filtrarAZ('a')
-filtrarAZ('b')
-filtrarAZ('c')*/
+//funcion para acomodar de la z-a//
+export function filtradoZa() {
+  let pokekz = datapokemon();
+  let pokemonZA = pokekz.sort((a,b)=>{
+    if (a.name < b.name) return 1;
+    if (a.name > b.name) return -1;
+  })
+  console.log(pokemonZA);
+
+// aqui vamos a renderizar 
+let renderTarjetasDOM = document.querySelector('.tarjetas');
+let filtrado1 = document.getElementById("filtrado1");
+filtrado1.innerHTML = "";
+renderTarjetasDOM.innerHTML = "";
+
+document.getElementById("pantalla3").style.display = "block";
+document.getElementById("pantalla2").style.display = "none";
+
+const filtrado = pokemonZA;
+  filtrado.forEach(elemento => {
+    let cardContainer = document.createElement('div');
+        cardContainer.classList.add("tarjetaLadoA");
+        let image = document.createElement('img')
+        image.classList.add("muñequitos");
+        let numeroPokemon = document.createElement('h1')
+        numeroPokemon.classList.add("numeros");
+        let nombre = document.createElement('h3')
+        nombre.classList.add("nombres");
+        let altura = document.createElement('h4')
+        let peso = document.createElement('h4')
+        let tipo = document.createElement('h4')
+        let resistencia = document.createElement('p')
+        resistencia.classList.add("resistencia1");
+        let debilidades = document.createElement('p')
+        debilidades.classList.add("debilidades1");
+        let cardContainer2 = document.createElement('div')
+        cardContainer2.classList.add("tarjetaLadoB")
+        let info = document.createElement('h2')
+        info.classList.add("ladoB")
+        
+    image.src = `${elemento.img}`
+    numeroPokemon.textContent = `${elemento.num}`
+    nombre.textContent = `${elemento.name}`
+    altura.textContent = 'ALTURA: ' + `${elemento.size.height}`
+    peso.textContent = 'PESO: ' + `${elemento.size.weight}`
+    tipo.textContent = 'TIPO: ' + `${elemento.type}`
+    resistencia.textContent = 'RESISTENCIA: ' + `${elemento.resistant}`
+    debilidades.textContent = 'DEBILIDADES: ' + `${elemento.weaknesses}`
+    info.textContent = 'Informacion: ' + `${elemento.about}`
+
+    cardContainer.appendChild(image)
+    cardContainer.appendChild(numeroPokemon)
+    cardContainer.appendChild(nombre)
+    cardContainer.appendChild(altura)
+    cardContainer.appendChild(peso)
+    cardContainer.appendChild(tipo)
+    cardContainer.appendChild(resistencia)
+    cardContainer.appendChild(debilidades)
+    cardContainer2.appendChild(info)
+
+    renderTarjetasDOM.appendChild(cardContainer);
+    renderTarjetasDOM.appendChild(cardContainer2);
+
+
+  })
+}
+
+/*funcion para amodar de mayor a menor
+let pokemonMax = pokemons.sort((a,b)=>{
+    if (a.num < b.num) return 1;
+    if (a.num > b.num) return -1;
+  })
+  console.log(pokemonMax);*/
+
+
+
+pokemons.forEach((weaknesses) => {
+ if(weaknesses === 'ice');
+
+  console.log(weaknesses);
+
+})

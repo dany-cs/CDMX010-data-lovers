@@ -38,8 +38,8 @@ body{
     position: absolute;
     width: 500px;
     height: 100px;
-    left: 365px;
-    top: 536px;
+    left: 414px;
+    top: 546px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -88,7 +88,7 @@ body{
     position: absolute;
     width: 500px;
     margin: 6vh;
-    left: 670px;
+    left: 590px;
     top: 0px;
     font-size: 55px;
     font-family: 'Press Start 2P', cursive;
@@ -114,17 +114,17 @@ body{
     position: absolute;
     width: 1000px;
     margin: 38.5vh;
-    left: 15vh;
-    top: 15px;
+    left: 6vh;
+    top: 5px;
     font-size: 53px;
-    
+    text-align: center;
     font-family: 'Press Start 2P', cursive;
     color:#f1ed08df;
     text-shadow:10px 4px 3px rgba(0, 0, 0, 0.993);
 }
 .k{
     position: fixed;
-    right: 158vh;
+    right: 160vh;
     top: 600px;
     font-size: 45px;
     margin: 0px;
@@ -165,9 +165,9 @@ body{
 /*aqui inicia barra lateral*/
 .contenedor-menu1{
     position: fixed;
-    background-image: url(../imagenes/pantallaverde.jpg);
+    background-image: url(../imagenes/pokemons.jpeg);
     background-size: cover;
-    width: 8%;
+    width: 9%;
     right: 2%;
     left: 0%;
     height: 100%;
@@ -190,10 +190,11 @@ a{
     list-style: none;
 }
 .contenedor-menu1 .botonA2 li a{
-    
     display: block;
     padding: 15px;
-    background-image: url(../imagenes/pantallaverde.jpg);
+    width: -webkit-fill-available;
+    background: transparent;
+    background-size: cover;
     transition:all .2s linear;
 }
 /*la siguiente linea realiza cambio de colores sencibles al pasar el mouse sobre el*/
@@ -209,7 +210,7 @@ a{
 }
 .contenedor-menu1 .botonA2 ul li a {
     display: inline-block;
-    background: rgba(246, 91, 251, 0.979);
+    
     border:5px rgb(7, 7, 7);
 }
 .contenedor-menu1 .botonA2 ul li a:hover{
@@ -228,10 +229,14 @@ nav li:hover ul{display: block;
     box-shadow: 0 0 5px rgb(34, 33, 33), 0 0 30px black, 0 0 30px black;
 
 }
-    /*aqui termina barra lateral*/
+ /*aqui termina barra lateral*/
+
 .pantalla3{
+    background: linear-gradient(277deg, #8bc34a 54.98%, #018cf5 106%);
+
+    background-size: cover;
     position: sticky;
-    background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
+    /*background: linear-gradient(180deg, rgba(248, 236, 11, 0.589) 11.98%, rgba(94, 245, 24, 0.52) 100%);*/
     padding: 0%;
     margin: 0%;
     bottom: auto;
@@ -247,10 +252,12 @@ nav li:hover ul{display: block;
     font-family: 'Slackey', cursive;
     font-size: 40px;
     text-align: center;
-    color: #407979;
-    text-shadow:2.5px 2.5px 1.5px #00E183;
+    color: #ece443;
+    -webkit-text-stroke: 1px #114ec6;
+    text-shadow:2.5px 2.5px 1.5px rgb(41, 39, 39);
 
 }
+
 .pantalla4{
     background: linear-gradient(180deg, rgba(248, 238, 11, 0.4) 11.98%, rgba(95, 245, 24, 0.4) 100%);
     margin:0%;
@@ -265,23 +272,28 @@ nav li:hover ul{display: block;
 
 .pokebola{
     position: fixed;
-    left: 1760px;
-    top: 810px;
-    margin: 20px;
-    padding: 8px;
-    border-radius: 25px;
-    outline: transparent;
+    left: 1768px;
+    top: 824px;
+    margin: 4px;
+    border-radius: 125px;
+    outline: none;
+    background: transparent;
+}
+.pokeboll{
+    width: 95px;
 }
 .pokebola:hover{
     box-shadow: 0 0 5px #dd1d1d, 0 0 30px #dd1d1d, 0 0 30px #dd1d1d;
 }
+
+/*aqui inicia estilos de tarjetas*/
 .tarjetas{
     
     position: relative;
     background: transparent;
     top: 20vh;
     left: 25vh;
-    width: 88%;
+    width: 98%;
     bottom: auto;
     display: flex;
     flex-flow: row wrap;
@@ -289,24 +301,23 @@ nav li:hover ul{display: block;
 }
 .tarjetaLadoA{
     margin-left: 18px;
+    margin-bottom: 5%; 
+    margin-right: 0%;
+    padding-bottom: 40px;
     position: relative;
-    background-image: url(../imagenes/pantallaverde.jpg);
-    
-    color: rgb(54, 236, 227);
+    background-image: url(../imagenes/fondoanime.jpg);
+    background-size:contain;
+    color: #580558;
     box-sizing: border-box;
     font-family: 'Iceland', cursive;
-    width: 200px;
+    text-align: center;
+    width: 222px;
     height:300px;
     display: inline-block;
-    z-index: 1;
-    padding-bottom: 40px;
-    border-radius: 70px 70px 15px 15px;
-    text-align: center;
-    box-shadow: -1px 15px 30px -12px black;
+    border-radius: 15px 15px 15px 15px;
     transition: all 1s ease 0s;
     transform-style: preserve-3d;
-    margin-bottom: 5%;
-    margin-right: 0%;
+    z-index: 1;
 
 }
 .tarjetaLadoA:hover{
@@ -315,67 +326,79 @@ nav li:hover ul{display: block;
 .muñequitos{
     position: inherit;
     background-color:transparent; 
-    top: -45px;
+    top: 39px;
+    left: -53px;
     border: transparent;
     border-radius: 8px 8px 20px 20px;
-    box-shadow: 0px 42px 37px -27px black;
+    box-shadow: 29px 42px 59px -29px black;
+}
+
+.nombres{
+    color: rgb(10, 65, 3);
+    font-size: 35px;
+    font-family: 'Iceland', cursive;
+    background-color: ;
+    position: relative;
+    top: -129px;
+}
+
+.tarjetaLadoA h4{
+    position: relative;
+    top: -102px;
+    font-size: 16px;
+    right: -36px;
+    color: white;
+}
+
+.resistencia1{
+    background-color: #faf9f9;
+    position: relative;
+    top: 1px;
+    height: 36px;
+}
+.debilidades1{
+    height: 38px;
+    background-color: #faf9f9;
+    top: 1px;
+    position: relative;
+    border-radius: inherit;
 }
 .numeros{
     position: inherit;
     border-radius: 110px 110px 110px 110px;
     width: 79px;
-    left: 59px;
-    bottom: -160px;
+    left: 72px;
+    bottom: -82px;
     background-color: #cdee3a;
     color: #683503;
     font-size: 20px;
     font-family: 'Iceland', cursive;
 }
-.nombres{
-    color: yellow;
-    font-size: 23px;
-    font-family: 'Slackey', cursive;
-    -webkit-text-stroke: 1px #114ec6;
-    position: relative;
-    top: -63px;
-}
-.tarjetaLadoA p{
-    position: relative;
-    top: -44px;
-    font-size: 18px;
-}
-
 .tarjetaLadoB{
-    background-image: url(../imagenes/pantallaverde.jpg);
+    background-image: url(../imagenes/ladoB.jpg);
+    background-size: cover;
     position:inherit;
     top:2px;
-    left: -199px;
-    width: 200px;
-    height:300px;
+    left: -215px;
+    width: 208px;
+    height: 296px;
     display: inline-flex;
-    border-radius: 70px 70px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 5px rgb(34, 33, 33), 0 0 10px black, 0 0 10px black;
 }
-.B{
-    color:white;
+.ladoB{
+    color: black;
+    background-color: #8Bc34ac9;
     font-size: 20px;
-    top: 30px;
+    top: 26px;
     left: 25px;
     width: 75%;
-    height:200px;
+    height: 248px;
     font-family: 'Iceland', cursive;
     position: relative;
     text-align: center;
-    background-color: rgba(126, 252, 0, 0.267);
-    border-radius: 70px 70px 15px 15px;
-}
-.B:hover div{
-    display: block; 
-    box-shadow: 0 0 5px rgb(34, 33, 33), 0 0 30px black, 0 0 30px black;
+    
+    border-radius: 15px 15px 15px 15px;
 }
 
-/*.{
-    width: 340px;
-    position: absolute;    
-    top: -30px;
-    left: -25px;
-}*/
+/*aqui termina estilos de tarjeta*/

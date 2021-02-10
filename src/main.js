@@ -1,9 +1,9 @@
 //Siempre debe ir el import en la primera linea del codigo, para que se lea de manera global
-import { datapokemon, datapokemonj } from './data.js';
+import { datapokemon, datapokemonj, filtradoAbc, filtradoZa } from './data.js';
 //acceder al bendito nodo
 let renderTarjetasDOM = document.querySelector('.tarjetas')
 let renderTarjetasDos = document.querySelector('.tarjetas2')
-//let filtradoDeMenuABC = document.querySelector('.menuABC')
+
 //esta pantalla es la principal que lleva al primer menu//
 function pantalla() {
     document.getElementById("pantalla2").style.display = "block";
@@ -15,32 +15,28 @@ document.getElementById("ingresar").addEventListener("click", pantalla);
 function pantallaDatosK() {
     document.getElementById("pantalla3").style.display = "block";
     document.getElementById("pantalla2").style.display = "none";
-    //funcion para filtrado
-    //const filtradouno = filtradoABC()
-    //filtradouno.forEach(elemento =>{
-       // let
-
-    //variable para mostrar nombres//
+    
     const filtrado = datapokemon()
     filtrado.forEach(elemento => {
-        console.log(elemento)
         let cardContainer = document.createElement('div');
         cardContainer.classList.add("tarjetaLadoA");
         let image = document.createElement('img')
         image.classList.add("muñequitos");
-        let numeroPokemon = document.createElement('h4')
+        let numeroPokemon = document.createElement('h1')
         numeroPokemon.classList.add("numeros");
         let nombre = document.createElement('h3')
         nombre.classList.add("nombres");
-        let altura = document.createElement('p')
-        let peso = document.createElement('p')
-        let tipo = document.createElement('p')
+        let altura = document.createElement('h4')
+        let peso = document.createElement('h4')
+        let tipo = document.createElement('h4')
         let resistencia = document.createElement('p')
+        resistencia.classList.add("resistencia1");
         let debilidades = document.createElement('p')
+        debilidades.classList.add("debilidades1");
         let cardContainer2 = document.createElement('div')
         cardContainer2.classList.add("tarjetaLadoB")
-        let info = document.createElement('nav')
-        info.classList.add("B")
+        let info = document.createElement('h2')
+        info.classList.add("ladoB")
         
         image.src = `${elemento.img}`
         numeroPokemon.textContent = `${elemento.num}`
@@ -63,18 +59,16 @@ function pantallaDatosK() {
         cardContainer2.appendChild(info)
 
         renderTarjetasDOM.appendChild(cardContainer);
-        renderTarjetasDOM.appendChild(cardContainer2);
-        
+        renderTarjetasDOM.appendChild(cardContainer2);         
     })
-
-    function menuLateral1() {
-       const fuego1 = document.getElementById(filtrarPorDebilidad('fire'))
-       fuego1.textContent = fuego1.value;
-    }
-    document.getElementById("fuegoUno").addEventListener("click", menuLateral1);
-
 }
+
 document.getElementById("botonk").addEventListener("click", pantallaDatosK);
+document.getElementById ("az1").addEventListener("click", filtradoAbc);
+document.getElementById("za1").addEventListener("click", filtradoZa);
+
+
+
 //pantalla que se mira cuando se da click al boton Johto//
 
 function pantallaDatosJ() {
@@ -82,7 +76,7 @@ function pantallaDatosJ() {
     document.getElementById("pantalla2").style.display = "none";
     const filtrado = datapokemonj()
     filtrado.forEach(elemento => {
-        console.log(elemento)
+
         let cardContainerA = document.createElement('div');
         cardContainerA.classList.add("tarjetasA")
         let image = document.createElement('img')
