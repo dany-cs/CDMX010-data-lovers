@@ -1,8 +1,9 @@
 //Siempre debe ir el import en la primera linea del codigo, para que se lea de manera global
-import { datapokemon, datapokemonj } from './data.js';
+import { datapokemon, datapokemonj, filtradoAbc1, filtradoAbc2 } from './data.js';
 //acceder al bendito nodo
 let renderTarjetasDOM = document.querySelector('.tarjetas')
 let renderTarjetasDos = document.querySelector('.tarjetas2')
+
 //let filtradoDeMenuABC = document.querySelector('.menuABC')
 //esta pantalla es la principal que lleva al primer menu//
 function pantalla() {
@@ -18,7 +19,7 @@ function pantallaDatosK() {
     //funcion para filtrado
     //const filtradouno = filtradoABC()
     //filtradouno.forEach(elemento =>{
-       // let
+    // let
 
     //variable para mostrar nombres//
     const filtrado = datapokemon()
@@ -40,7 +41,7 @@ function pantallaDatosK() {
         //let cardContainerB = document.createElement('div');//
         //cardContainerB.classList.add("tarjetaLadoB")
         //let info = document.createElement('p')
-        
+
         image.src = `${elemento.img}`
         numeroPokemon.textContent = `${elemento.num}`
         nombre.textContent = `${elemento.name}`
@@ -65,11 +66,11 @@ function pantallaDatosK() {
         //renderTarjetasDOM.appendChild(cardContainerB);
     })
 
-    function menuLateral1() {
+    /*function menuLateral1() {
        const fuego1 = document.getElementById(filtrarPorDebilidad('fire'))
        fuego1.textContent = fuego1.value;
     }
-    document.getElementById("fuegoUno").addEventListener("click", menuLateral1);
+    document.getElementById("fuegoUno").addEventListener("click", menuLateral1);*/
 
 }
 document.getElementById("botonk").addEventListener("click", pantallaDatosK);
@@ -89,9 +90,9 @@ function pantallaDatosJ() {
         numeroPokemon.classList.add("numerosA");
         let nombre = document.createElement('h3')
         nombre.classList.add("nombresA");
-        let altura = document.createElement('h4')
+        let altura = document.createElement('p')
         altura.classList.add("alturaA");
-        let peso = document.createElement('h4')
+        let peso = document.createElement('p')
         peso.classList.add("pesoA");
         let tipo = document.createElement('p')
         tipo.classList.add("tipoA");
@@ -99,39 +100,43 @@ function pantallaDatosJ() {
         resistencia.classList.add("resistenciaA");
         let debilidades = document.createElement('p')
         debilidades.classList.add("debilidadesA");
-        /*let cardContainerB = document.createElement('div')
-        cardContainerB.classList.add("tarjetasB")
-        let info = document.createElement('p')*/
+        let cardContainerB = document.createElement('div')
+        cardContainerB.classList.add("tarjetaLadoB1")
+        let info = document.createElement('nav')
+        info.classList.add("ladoB2")
         image.src = `${elemento.img}`
         numeroPokemon.textContent = `${elemento.num}`
-        nombre.textContent = `${elemento.name}` 
+        nombre.textContent = `${elemento.name}`
         altura.textContent = 'ALTURA: ' + `${elemento.size.height}`
         peso.textContent = 'PESO: ' + `${elemento.size.weight}`
         tipo.textContent = 'TIPO: ' + `${elemento.type}`
         resistencia.textContent = 'RESISTENCIA: ' + `${elemento.resistant}`
         debilidades.textContent = 'DEBILIDADES: ' + `${elemento.weaknesses}`
-        //info.textContent = `${elemento.about}`//
+        info.textContent = `${elemento.about}`
         cardContainerA.appendChild(image)
         cardContainerA.appendChild(numeroPokemon)
         cardContainerA.appendChild(nombre)
-        //cardContainerB.appendChild(info)//
+        cardContainerB.appendChild(info)
         cardContainerA.appendChild(altura)
         cardContainerA.appendChild(peso)
         cardContainerA.appendChild(tipo)
         cardContainerA.appendChild(resistencia)
         cardContainerA.appendChild(debilidades)
         renderTarjetasDos.appendChild(cardContainerA)
-        //renderTarjetasDos.appendChild(cardContainerB)//
-     
+        renderTarjetasDos.appendChild(cardContainerB)
     })
-    function menuLateral2() {
-        const fuego2 = document.getElementById(filtrarPorDebilidad('fire'))
-        fuego1.textContent = fuego2.value;
-     }
-     document.getElementById("fuegoDos").addEventListener("click", menuLateral2);
-
 
 }
+//bien, llama a la funcion
+document.getElementById("A-Z").addEventListener("click", filtradoAbc1);
+document.getElementById("Z-A").addEventListener("click", filtradoAbc2);
+
+/*function menuLateral2() {
+    const fuego2 = document.getElementById(filtrarPorDebilidad('fire'))
+    fuego1.textContent = fuego2.value;
+ }
+ document.getElementById("fuegoDos").addEventListener("click", menuLateral2);*/
+
 document.getElementById("botonj").addEventListener("click", pantallaDatosJ);
 //boton pokebola que regresa a menu principal//
 function regreso1() {
