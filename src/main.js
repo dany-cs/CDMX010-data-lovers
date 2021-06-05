@@ -1,5 +1,6 @@
 //Siempre debe ir el import en la primera linea del codigo, para que se lea de manera global
 import { datapokemon, datapokemonj, filtradoAbc, filtradoZa } from './data.js';
+import { filtradoAbc1, filtradoAbc2 } from './data.js';
 //acceder al bendito nodo
 let renderTarjetasDOM = document.querySelector('.tarjetas')
 let renderTarjetasDos = document.querySelector('.tarjetas2')
@@ -8,6 +9,7 @@ let renderTarjetasDos = document.querySelector('.tarjetas2')
 function pantalla() {
     document.getElementById("pantalla2").style.display = "block";
     document.getElementById("pantalla1").style.display = "none";
+    // eslint-disable-next-line no-undef
     document.getElementById("nombre").innerHTML = nomUsuario.value;
 }
 document.getElementById("ingresar").addEventListener("click", pantalla);
@@ -15,7 +17,7 @@ document.getElementById("ingresar").addEventListener("click", pantalla);
 function pantallaDatosK() {
     document.getElementById("pantalla3").style.display = "block";
     document.getElementById("pantalla2").style.display = "none";
-    
+
     const filtrado = datapokemon()
     filtrado.forEach(elemento => {
         let cardContainer = document.createElement('div');
@@ -37,7 +39,8 @@ function pantallaDatosK() {
         cardContainer2.classList.add("tarjetaLadoB")
         let info = document.createElement('h2')
         info.classList.add("ladoB")
-        
+    
+
         image.src = `${elemento.img}`
         numeroPokemon.textContent = `${elemento.num}`
         nombre.textContent = `${elemento.name}`
@@ -78,44 +81,60 @@ function pantallaDatosJ() {
     filtrado.forEach(elemento => {
 
         let cardContainerA = document.createElement('div');
-        cardContainerA.classList.add("tarjetasA")
+        cardContainerA.classList.add("tarjetaLadoA1")
         let image = document.createElement('img')
         image.classList.add("muñes")
-        let numeroPokemon = document.createElement('h4')
+        let numeroPokemon = document.createElement('h3')
+        numeroPokemon.classList.add("numerosA");
         let nombre = document.createElement('h3')
-        let altura = document.createElement('h4')
-        let peso = document.createElement('h4')
+        nombre.classList.add("nombresA");
+        let altura = document.createElement('p')
+        altura.classList.add("alturaA");
+        let peso = document.createElement('p')
+        peso.classList.add("pesoA");
         let tipo = document.createElement('p')
+        tipo.classList.add("tipoA");
         let resistencia = document.createElement('p')
+        resistencia.classList.add("resistenciaA");
         let debilidades = document.createElement('p')
-        /*let cardContainerB = document.createElement('div')
-        cardContainerB.classList.add("tarjetasB")
-        let info = document.createElement('p')*/
+        debilidades.classList.add("debilidadesA");
+        let cardContainerB = document.createElement('div')
+        cardContainerB.classList.add("tarjetaLadoB1")
+        let info = document.createElement('nav')
+        info.classList.add("ladoB2")
         image.src = `${elemento.img}`
         numeroPokemon.textContent = `${elemento.num}`
-        nombre.textContent = `${elemento.name}` 
+        nombre.textContent = `${elemento.name}`
         altura.textContent = 'ALTURA: ' + `${elemento.size.height}`
         peso.textContent = 'PESO: ' + `${elemento.size.weight}`
         tipo.textContent = 'TIPO: ' + `${elemento.type}`
         resistencia.textContent = 'RESISTENCIA: ' + `${elemento.resistant}`
         debilidades.textContent = 'DEBILIDADES: ' + `${elemento.weaknesses}`
-        //info.textContent = `${elemento.about}`//
+        info.textContent = `${elemento.about}`
         cardContainerA.appendChild(image)
         cardContainerA.appendChild(numeroPokemon)
         cardContainerA.appendChild(nombre)
-        //cardContainerB.appendChild(info)//
+        cardContainerB.appendChild(info)
         cardContainerA.appendChild(altura)
         cardContainerA.appendChild(peso)
         cardContainerA.appendChild(tipo)
         cardContainerA.appendChild(resistencia)
         cardContainerA.appendChild(debilidades)
         renderTarjetasDos.appendChild(cardContainerA)
-        //renderTarjetasDos.appendChild(cardContainerB)//
-
-
-       
+        renderTarjetasDos.appendChild(cardContainerB)
     })
+
 }
+//bien, llama a la funcion
+document.getElementById("A-Z").addEventListener("click", filtradoAbc1);
+document.getElementById("Z-A").addEventListener("click", filtradoAbc2);
+
+/*function menuLateral2() {
+    const fuego2 = document.getElementById(filtrarPorDebilidad('fire'))
+    fuego1.textContent = fuego2.value;
+ }
+ document.getElementById("fuegoDos").addEventListener("click", menuLateral2);*/
+
 document.getElementById("botonj").addEventListener("click", pantallaDatosJ);
 //boton pokebola que regresa a menu principal//
 function regreso1() {
