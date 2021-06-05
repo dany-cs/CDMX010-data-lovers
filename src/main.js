@@ -8,6 +8,7 @@ let renderTarjetasDos = document.querySelector('.tarjetas2')
 function pantalla() {
     document.getElementById("pantalla2").style.display = "block";
     document.getElementById("pantalla1").style.display = "none";
+    // eslint-disable-next-line no-undef
     document.getElementById("nombre").innerHTML = nomUsuario.value;
 }
 document.getElementById("ingresar").addEventListener("click", pantalla);

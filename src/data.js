@@ -146,6 +146,38 @@ export function filtradoAbc2() {
        renderTarjetasDos.appendChild(cardContainerB)
    })
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*export function AZnombresJ(){
+  let nomJ = pokemons.filter(function ())
+}*/
+//console.log(pokemons.sort());//
+
+
+//funcion para acomodar de la a-z//
+
 export function filtradoAbc() {
   let pokeK = datapokemon();
   let pokemonAz = pokeK.sort((a, b) => {
@@ -208,6 +240,23 @@ export function filtradoAbc() {
     renderTarjetasDOM.appendChild(cardContainer);
     renderTarjetasDOM.appendChild(cardContainer2);
 
+}
+
+export function filtrarPorDebilidad(debilidad) {
+  const pokemonsFiltrados = pokemons.filter(function (pokemon) {
+    return pokemon.weaknesses.includes(debilidad);
+  })
+
+  return pokemonsFiltrados;
+}
+
+
+  //'pikachu'[0] === 'p' // true
+ // 'volbasor'.includes('vol') // true
+ 
+export function filtrarAZ(character) {
+  const pokemonsFiltrados = pokemons.sort(function(pokemon){
+    return pokemon.name[0] === character
   })
 }
 

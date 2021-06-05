@@ -349,6 +349,56 @@ nav li:hover ul{display: block;
     color: rgb(10, 65, 3);
     font-size: 35px;
     font-family: 'Iceland', cursive;
+    background-color:wheat ;
+    position: relative;
+    top: -129px;
+}
+
+.tarjetaLadoA h4{
+    position: relative;
+    top: -102px;
+    font-size: 16px;
+    right: -36px;
+    color: white;
+}
+/*Aqui comienza barra lateral Jotho*/
+.contenedor-menu2{
+    position:fixed;
+    background-image: url(../imagenes/pko.jpg);
+    background-size:contain;
+    width: 8%;
+    right:  2%;
+    left: 0%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Iceland', cursive;
+    font-size: 25px;
+    
+}
+a{
+    text-decoration: none;
+    color: white; 
+
+}
+
+.contenedor-menu2 .botonB2{
+    width: 100%;
+}
+.contenedor-menu2 ul{
+    list-style: none;
+}
+.contenedor-menu2 .botonB2 li a{
+    display: block;
+    padding: 15px;
+    background: transparent;
+    transition: all .2s linear;
+    width:-webkit-fill-available;
+}
+/*la siguiente linea realiza cambio de colores sensibles al pasar el mouse sobre el*/
+.contenedor-menu2 .botonB2 li a:hover{
+    background: #81C258;
+    color: purple;
     
     position: relative;
     top: -129px;
@@ -361,8 +411,21 @@ nav li:hover ul{display: block;
     right: -36px;
     color: white;
 }
+.numerosA{
+    font-family: 'Iceland', cursive;
+    color: white;
+    text-shadow:2.5px 1.5px 3px #000205;
+    font-size: 23px;
+    position: relative;
+    width: 79px;
+    border-radius:  110px 110px 110px 110px;
+    left: 80px;
+    bottom: -80px;
+    background-color:rgb(242, 247, 0);
+    border-radius: 15px 15px 15px 15px;
+}
 
-.resistencia1{
+.resistencia1 {
     background-color: #faf9f9;
     position: relative;
     top: 1px;
@@ -414,3 +477,105 @@ nav li:hover ul{display: block;
 }
 
 /*aqui termina estilos de tarjeta*/
+.nombresA{
+    font-family: 'Slackey', cursive;
+    color: #e1fa01;
+    text-shadow:3px 2.5px 1.5px #032564;
+    font-size: 25px;
+    text-align: center;
+    bottom: 130px;
+    position: relative ;
+}
+.muñes{
+    position: inherit;
+    bottom: -40px;
+    left:-66px;
+    background-color: transparent;
+    box-shadow: 29px 42px 59px -29px black;
+}
+.alturaA{
+    color: white;
+    text-shadow:1.5px 1.5px 3px #000205;
+    font-size: 23px;
+    position: relative;
+    bottom: -150px;
+    width: 200px;
+    left: 15px;
+    background-color:#032564;
+    border-radius: 70px 70px 70px 70px;
+}
+.pesoA{
+    color:white;
+    text-shadow:2.5px 2.5px 1.5px #000205;
+    right: -135px;
+   
+    position: inherit;
+    border-radius: 70px 70px 70px 70px;
+    width: 80px;
+    bottom: 80px;
+}
+.resistenciaA{
+    font-size:19px ;
+    color:#032564;
+    background-color: white;
+    bottom: 20px;
+    position: relative;
+    height: 50px;
+    font-family: 'Iceland', cursive;
+}
+.tipoA{
+    font-size: 18px ;
+    text-shadow:2.5px 2.5px 1.5px #000205;
+    color:white;
+    right: -135px;
+    bottom: 150px;
+    position: inherit;
+    border-radius: 70px 70px 70px 70px;
+    background-color: transparent;
+    width: 80px;
+   
+    
+}
+.debilidadesA{
+    font-size:17px ;
+    background-color:white;
+    color: #032564;
+    bottom:30px;
+    position: relative;
+    height: 45px;
+    font-family: 'Iceland', cursive;
+}
+
+/*Aqui termina tarjetas lado jotho*/
+
+/*aqui comienza lado B tarjeta johto */
+.tarjetaLadoB1{
+   
+    position: inherit;
+    top: 2px;
+    left:-241px;
+    width: 240px;
+    height:340px;
+    display: inline-flex;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: -1px 15px 30px -12px black;
+    background-size:cover;
+    background-image: url(../imagenes/grookey.jpg);
+    
+}
+.ladoB2{
+    color:black;
+    top:20px;
+    left:15px;
+    width: 90%;
+    height: 286px;
+    position: relative;
+    font-size:25px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    font-family: 'Iceland', cursive;
+    background-color: #8Bc34ac9;
+   
+}
+
+/*aqui termina lado B tarjeta johto */
